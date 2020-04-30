@@ -1,0 +1,131 @@
+
+
+.contenido {
+    background: #98cdd0;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px; /*tamaño de la fuente*/
+    font-family: sans-serif; 
+    color:#125d75;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/*  Se modifica el tamaño del logo  */
+body .contenido .cabecera .logo img{
+    padding: 10px;
+    width: 8% ;
+    float: left;
+}
+
+.imagen {
+    width: 100%;
+    margin: 2% 0%;
+    border: 1px solid black;
+}
+
+img {
+    display: block;
+    border-radius: 10px;
+    width: 50%; /*la imagen usa un 90 % de px*/
+    margin: auto;
+}
+
+.cabecera {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 5px 5px;
+    width: auto;
+}
+
+/*  Mensaje de Bienvenida   */
+.seccion1{
+    color:black;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 40px;
+    text-align: center;
+    padding: auto;
+}
+
+.menu{
+    /*text-align: center;*/
+    position: absolute;
+    margin: 1% 2.5%;
+    width: 95%;
+    height: 10%;
+    background: #ccc;
+    padding: auto;
+    border: 1px solid black;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+
+
+.lista li a {
+    background: #227093;
+    color: #f7f1e3;
+    padding: 10px 15px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.lista > li {
+    float: left;
+}
+
+.lista li ul{
+    display: none;
+    position: absolute;
+    min-width: 100%;/*140px;*/
+}
+
+.lista li:hover > ul{
+    display: block;
+
+}
+
+.lista li{
+    padding: auto;
+    width: 23% ;
+}
+ .lista{
+     padding: auto;
+     margin: 1% 5%;
+     width: 90%;
+ }
+
+.lista li a:hover{
+    box-shadow: 0px 2px 0px #2c2c54;
+    text-decoration: underline;
+    background: #f7f1e3;
+    color: #2c2c54;
+}
+
+a:active{
+    box-shadow: none;
+}
+
+
+footer {
+    padding: 10px;
+    border: 1px solid black;
+    width: auto;
+    background: white;
+    color: #0c3a49;
+    display: block;
+    text-align: center;
+    font-size: 12px; /*tamaño de la fuente*/
+}

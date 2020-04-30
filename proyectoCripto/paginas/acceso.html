@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> acceso </title>
+        <link rel="shortcut icon" type="image/x-icon" href="icono.ico">
+        <link rel="stylesheet" href="../css/estilos2.css">
+    </head>
+
+    <body>
+        <div class="contenido">
+            <header class="cabecera">
+                <h1>
+                    Inicio de sesion
+                </h1>
+            </header>
+
+            <div class="mensaje">
+                <h2>Bienvenido, porfavor complete los siguientes datos</h2>
+            </div>
+
+            <form >
+                <div class="sub">
+                    <h3>Ingrese sus datos</h3>
+                </div>
+
+                <label for="usuario"> Usuario: </label>
+                <input type="text" placeholder="correo o RFC" name="usuario">
+                <br/><br/><br/>
+                <label for="pass"> Contraseña: </label>
+                <input type="password" name="pass">
+                <br/><br/><br/>
+
+                <div class="ingresar"> 
+                    <input type="button" value="Ingresar" href>
+                </div>
+                <br/><br/><br/>
+
+                <hr />
+                <br/><br/><br/>
+                
+                <h4>  ¿No tengo cuenta?  Estapagina solo es para usuarios registrados</h4>
+                <input type="button" value="Pagina de inicio" onclick="history.back()">
+                <br/><br/><br/>
+            </form>
+
+        </div>
+    </body>
+</html>

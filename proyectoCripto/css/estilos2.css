@@ -1,0 +1,75 @@
+.contenido {
+    background: #98cdd0;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+.cabecera {
+    background: #085a75;
+    color:white;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 90% 10%;
+    margin: 2%;
+    padding: 5px;
+}
+
+form{
+    background: white;
+    width: auto;
+    margin: 2%;
+    padding: auto;
+}
+
+h3{
+    font-size: 20px;
+    color: #043242;
+    background: #98cdd0;
+    margin: 1%;
+    padding: 1%;
+    width: 90% 1%;
+}
+
+.sub{
+    margin: 0.5%;
+    padding: 1%;
+    width: 90% 1%;
+}
+
+label{
+    font-size: 18px;
+    display: inline-block;
+    width: 12%;
+    text-align: right;
+    padding: 0.5%;
+}
+
+select {
+    font-size: 15px;
+    display: inline-block;
+    width: 12%;
+    padding: 0.5%;
+}
+
+input{
+    font-size: 14px;
+    display: inline-block;
+    width: 12%;
+    padding: 0.5%;
+}
+
+footer {
+    padding: 10px;
+    border: 1px solid black;
+    width: auto;
+    background: white;
+    color: #0c3a49;
+    display: block;
+    text-align: center;
+    font-size: 12px; /*tamaño de la fuente*/
+}
+
+.mensaje {
+    color: #0c3a49;
+}

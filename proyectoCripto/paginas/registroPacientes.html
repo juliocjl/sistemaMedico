@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> registro pacientes</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icono.ico">
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <script src="../js//validacionPacientes.js"> </script>
+
+</head>
+
+<body>
+    <div class="contenido">
+        <header class="cabecera">
+            <h1>
+                 Registro de pacientes
+            </h1>
+        </header>
+        
+        <div class="mensaje">
+            <h2>Bienvenido, porfavor complete los siguientes datos</h2>
+            <h4> <a href="acceso.html">  ¿Ya estoy registrado?  </a></h4>
+        </div>
+
+        <div class="formulario">
+            <form action="/proyectoCripto/php//validaPaciente.php" method="POST" onsubmit="return validarP();">
+                <div class="sub">
+                    <h3>Datos generales</h3>
+                </div>
+                
+                <label for="nombre"> Ingrese su nombre: </label>
+                <input type="text" placeholder="nombre(s)" name="nombre" id="nombre">
+                
+                <label for="apellido1"> Apellido paterno: </label>
+                <input type="text" placeholder="primer apellido" name="apellido1" id="apellido1">
+                
+                <label for="apellido2"> Apellido materno: </label>
+                <input type="text" placeholder="segundo apellido" name="apellido2" id="apellido2">
+                <br/><br/><br/>
+
+                <label for="correo"> correo electronico: </label>
+                <input type="email" placeholder="ejemplo@dominio.com" name="correo" id="correo">
+                
+                <label for="pass"> Ingrese contrasenia: </label>
+                <input type="password" placeholder="@+ejemplo12345" name="pass" id="pass">
+
+                <label for="sexo"> Sexo: </label>
+                <select name="sexo" id="sexo"> 
+                    <option value="">--</option>
+                    <option value="Femenino"> Femenino</option>
+                    <option value="Masculino"> Masculino)</option>
+                    <option value="Otro"> Otro</option>
+                </select>
+                <br/><br/><br/>
+
+                <label for="direccion"> Direccion: </label>
+                <input type="text" placeholder="calle, numero, colonia" name="direccion" id="direccion">
+
+                <label for="cp"> Codigo postal: </label>
+                <input type="text"  placeholder="50808" name="cp" id="cp">
+                
+                <label for="telefono"> Telefono: </label>
+                <input type="tel" name="telefono" placeholder="(55)26718090" id="telefono">
+                <br/><br/><br/>
+
+                <label for="curp"> CURP: </label>
+                <input type="text" name="curp" placeholder="18 caracteres"id="curp">
+                
+                <label for="rfc"> RFC: </label>
+                <input type="text" name="rfc" placeholder="12 caracteres" id="rfc">
+                
+                <label for="nss"> NSS: </label>
+                <input type="text" name="nss" placeholder="11 caracteres" id="nss">
+                <br/><br/><br/>
+
+                <label for="edad"> Edad: </label>
+                <input type="number" name="edad" id="edad">
+
+                <label for="estado"> Estado civil: </label>
+                <select name="estado" id="estado"> 
+                    <option value="">--</option>
+                    <option value="soltero"> Soltero(a) </option>
+                    <option value="casado"> Casado(a) </option>
+                    <option value="divorciado"> Divorciado(a) </option>
+                    <option value="unionLibre"> Union Libre </option>
+                </select>
+
+                <label for="hijos"> Numero de hijos: </label>
+                <input type="number" name="hijos" id="hijos">
+                <br/><br/><br/>
+
+                <label for="lugar"> Lugar de nacimiento: </label>
+                <input type="text" name="lugar" id="lugar">
+
+                <label for="drogas"> Consumo de drogas: </label>
+                <input type="text" name="drogas" id="drogas">
+
+                <label for="medicamentos"> Consumo de medicamentos: </label>
+                <input type="text" name="medicamentos" id="medicamentos">
+                <br/><br/><br/>
+
+<!--Inicio de expediente clinico-->
+                
+                <div class="sub">
+                    <h3>Datos clinicos, para expediente medico</h3>
+                </div>
+
+                <br/><br/><br/>
+
+                <label for="sanguineo"> Grupo sanguineo </label>
+                <select name="sanguineo" id="sanguineo"> 
+                    <option value="">--</option>
+                    <option value="ab+"> AB+ </option>
+                    <option value="ab-"> AB- </option>
+                    <option value="a+"> A+ </option>
+                    <option value="a-"> A- </option>
+                    <option value="b+"> B+ </option>
+                    <option value="b-"> B- </option>
+                    <option value="o+"> O+ </option>
+                    <option value="o-"> O- </option>
+                </select>
+
+                <label for="alergias"> Alergias: </label>
+                <input type="text" name="alergias" id="alergias">
+
+                <label for="altura"> Altura: </label>
+                <input step="0.10" type="number" placeholder="en metros" name="altura" id="altura">
+                <br/><br/><br/>
+
+                <label for="peso"> Peso: </label>
+                <input step="0.10" type="number" placeholder="en kilogramos" name="peso" id="peso">
+
+                <label for="malestar"> Malestar: </label>
+                <input type="text" name="malestar" id="malestar">
+                
+                <label for="padecimiento"> Enfermedades cronicas: </label>
+                <input type="text" name="padecimiento" id="padecimiento">
+                <br/><br/><br/>
+
+                <label for="padecimientoFamiliar"> Parientes con enfermedades: </label>
+                <input type="text" name="padecimientoFamiliar" id="padecimientoFamiliar">
+
+<!-- Datos agregados por el medico -->
+
+                <label for="area"> Area designada: </label>
+                <input type="text" name="area" id="area">
+
+                <label for="tratamiento"> Tratamiento: </label>
+                <input type="text" name="tratamiento" id="tratamiento">
+                <br/><br/><br/>
+
+                <label for="fecha"> Fecha de creacion: </label>
+                <input type="date" name="fecha" placeholder="fecha" id="fecha">
+                <br/><br/><br/>
+
+                <div class="enviar"> 
+                    <input type="submit" value="Registrar">
+                </div>
+
+                <br/><br/><br/>
+                <hr />
+                <br/><br/><br/>
+
+                <div class="inicio"> 
+                    <input type="button" value="Pagina de inicio" href>
+                </div>
+                <br/><br/><br/>
+            </form>
+
+        </div>
+        <footer>
+            Derechos reservados 2020
+            <time> datetime="12-04-2020" > Publicado 12/04/202</time>
+        </footer>
+    </div>
+</body>
+</html>
