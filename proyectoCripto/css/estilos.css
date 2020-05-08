@@ -2,7 +2,7 @@
 
 .contenido {
     background: #98cdd0;
-    border: 1px solid black;
+    border: 1px solid blue;
     margin: auto;
     text-align: center;
     width: 100%;
@@ -10,7 +10,7 @@
 
 h1 {
     font-size: 50px; /*tamaño de la fuente*/
-    font-family: sans-serif; 
+    font-family: sans-serif;
     color:#125d75;
     text-align: center;
     width: 100%;
@@ -27,7 +27,6 @@ body .contenido .cabecera .logo img{
 .imagen {
     width: 100%;
     margin: 2% 0%;
-    border: 1px solid black;
 }
 
 img {
@@ -39,7 +38,6 @@ img {
 
 .cabecera {
     padding: 10px;
-    border: 1px solid black;
     background-color: white;
     margin: 5px 5px;
     width: auto;
@@ -63,7 +61,6 @@ img {
     height: 10%;
     background: #ccc;
     padding: auto;
-    border: 1px solid black;
 }
 
 ul, ol{
@@ -121,7 +118,6 @@ a:active{
 
 footer {
     padding: 10px;
-    border: 1px solid black;
     width: auto;
     background: white;
     color: #0c3a49;

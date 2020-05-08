@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title> acceso </title>
-        <link rel="shortcut icon" type="image/x-icon" href="icono.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico">
         <link rel="stylesheet" href="../css/estilos2.css">
+        <script src="../js//validaLogin.js"> </script>
     </head>
 
     <body>
@@ -19,20 +20,20 @@
                 <h2>Bienvenido, porfavor complete los siguientes datos</h2>
             </div>
 
-            <form >
+            <form action="../php/validaLogin.php" method="POST" onsubmit="return validarLogin();">
                 <div class="sub">
                     <h3>Ingrese sus datos</h3>
                 </div>
 
                 <label for="usuario"> Usuario: </label>
-                <input type="text" placeholder="correo o RFC" name="usuario">
+                <input type="text" placeholder="correo" name="usuario" id="usuario">
                 <br/><br/><br/>
-                <label for="pass"> Contraseña: </label>
-                <input type="password" name="pass">
+                <label for="passLog"> Contraseña: </label>
+                <input type="password" name="passLog" id="passLog">
                 <br/><br/><br/>
 
                 <div class="ingresar"> 
-                    <input type="button" value="Ingresar" href>
+                    <input type="submit" value="Ingresar">
                 </div>
                 <br/><br/><br/>
 
@@ -40,7 +41,7 @@
                 <br/><br/><br/>
                 
                 <h4>  ¿No tengo cuenta?  Estapagina solo es para usuarios registrados</h4>
-                <input type="button" value="Pagina de inicio" onclick="history.back()">
+                <input type="button" value="Regresar" onclick="history.back()">
                 <br/><br/><br/>
             </form>
 

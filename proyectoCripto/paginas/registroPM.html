@@ -2,25 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title> registro personal medico</title>
-    <link rel="shortcut icon" type="image/x-icon" href="icono.ico">
+    <title> Personal Medico </title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico">
     <link rel="stylesheet" href="../css/estilos2.css">
+    <script src="../js/validaPM.js"></script>
 </head>
 
 <body>
     <div class="contenido">
         <header class="cabecera">
             <h1>
-                Registro de personal medico
+                Registro de Personal Medico
             </h1>
         </header>
         <div class="mensaje">
             <h2>Bienvenido, porfavor complete los siguientes datos</h2>
-            <h4> <a href="">  ¿Ya estoy registrado?  </a></h4>
+            <h4> <a href="acceso.html">  ¿Ya estoy registrado?  </a></h4>
         </div>
         
         <div class="formulario">
-            <form>
+            <form action="../php/validaPM.php" method="POST" onsubmit="return validarPM">
                 <div class="sub">
                     <h3>Datos generales</h3>
                 </div>
@@ -41,34 +42,35 @@
                 <label for="pass"> Ingrese contrasenia: </label>
                 <input type="password" placeholder="@+ejemplo12345" name="pass" id="pass">
 
-                <label for="personal"> Tipo de personal </label>
-                <select name="personal" id="personal"> 
+                <label for="tipoPersonal"> Tipo de personal </label>
+                <select name="tipoPersonal" id="tipoPersonal"> 
+                    <option value=""> -- </option>
                     <option value="Medico"> Medico</option>
                     <option value="Enfermero(a)"> Enfermero(a)</option>
                     <option value="Pasante"> Pasante</option>
-                    <option value="Otro"> Otro</option>
+                    <option value="Otro"> Otro </option>
                 </select>
                 <br/><br/><br/>
 
-                <label for="direccion"> direccion </label>
+                <label for="direccion"> Direccion </label>
                 <input type="text" placeholder="calle, numero, colonia" name="direccion" id="direccion">
 
                 <label for="cp"> Codigo postal </label>
                 <input type="text"  placeholder="66666" name="cp" id="cp">
                 
                 <label for="telefono"> telefono </label>
-                <input type="tel" name="telefono">
+                <input type="tel" name="telefono" id="telefono">
                 <br/><br/><br/>
 
                 <label for="curp"> CURP </label>
-                <input type="text" name="curp">
+                <input type="text" name="curp" id="curp">
                 
                 <label for="rfc"> RFC </label>
-                <input type="text" name="rfc">
+                <input type="text" name="rfc" id="rfc">
                 
                 <label for="area"> Area designada </label>
                 <select name="area" id="area"> 
-                    <option value="Otro"> Otro </option>
+                    <option value=""> -- </option>
                     <option value="Urgencias"> Urgencias </option>
                     <option value="Medicina General"> Medicina General </option>
                     <option value="Rayos X"> Rayos X </option>
@@ -79,31 +81,33 @@
                     <option value="Terapia intensiva"> Terapia intensiva </option>
                     <option value="Cirugias"> Cirugias </option>
                     <option value="Infectologia"> Infectologia </option>
+                    <option value=""> --  </option>
+                    <option value="Tecnico"> Tecnico  </option>
+                    <option value="T.I"> Tecnologias de la Informacion  </option>
+                    <option value="Administrativo"> Administrativo  </option>
+
                 </select>
 
                 <br/><br/><br/>
 
                 <div class="enviar"> 
-                    <input type="button" value="Registrar" href>
+                    <input type="submit" value="Registrar">
                 </div>
 
                 <br/><br/><br/>
-
-
-                <hr />
+                <hr/>
                 <br/><br/><br/>
 
                 <div class="inicio"> 
-                    <input type="button" value="Pagina de inicio" href>
+                    <input type="button" value="Pagina de inicio" onclick="history.back()">
                 </div>
-                
+                <br/><br/><br/>
             </form>
-
         </div>
 
         <footer>
             Derechos reservados 2020
-            <time> datetime="12-04-2020" > Publicado 12/04/202</time>
+            <time datetime="12-04-2020"> Publicado 12/04/202</time>
         </footer>
     </div>
 </body>

@@ -73,3 +73,17 @@ footer {
 .mensaje {
     color: #0c3a49;
 }
+
+.opciones a{
+    display: block;
+    font-size: 20px;  
+    padding: 5%;
+    border: 1px solid black;
+    margin: 5%;
+    width: 80%;
+    background: white;
+    position: relative;
+}
+.opciones{
+    width: auto;
+}

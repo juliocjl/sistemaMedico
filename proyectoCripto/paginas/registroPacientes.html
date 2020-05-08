@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> registro pacientes</title>
-    <link rel="shortcut icon" type="image/x-icon" href="icono.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico">
     <link rel="stylesheet" href="../css/estilos2.css">
     <script src="../js//validacionPacientes.js"> </script>
 
@@ -13,7 +13,7 @@
     <div class="contenido">
         <header class="cabecera">
             <h1>
-                 Registro de pacientes
+                 Registro de Pacientes
             </h1>
         </header>
         
@@ -23,7 +23,7 @@
         </div>
 
         <div class="formulario">
-            <form action="/proyectoCripto/php//validaPaciente.php" method="POST" onsubmit="return validarP();">
+            <form action="../php/validaPaciente.php" method="POST" onsubmit="return validarP();" >
                 <div class="sub">
                     <h3>Datos generales</h3>
                 </div>
@@ -48,7 +48,7 @@
                 <select name="sexo" id="sexo"> 
                     <option value="">--</option>
                     <option value="Femenino"> Femenino</option>
-                    <option value="Masculino"> Masculino)</option>
+                    <option value="Masculino"> Masculino</option>
                     <option value="Otro"> Otro</option>
                 </select>
                 <br/><br/><br/>
@@ -110,14 +110,14 @@
                 <label for="sanguineo"> Grupo sanguineo </label>
                 <select name="sanguineo" id="sanguineo"> 
                     <option value="">--</option>
-                    <option value="ab+"> AB+ </option>
-                    <option value="ab-"> AB- </option>
-                    <option value="a+"> A+ </option>
-                    <option value="a-"> A- </option>
-                    <option value="b+"> B+ </option>
-                    <option value="b-"> B- </option>
-                    <option value="o+"> O+ </option>
-                    <option value="o-"> O- </option>
+                    <option value="AB+"> AB+ </option>
+                    <option value="AB-"> AB- </option>
+                    <option value="A+"> A+ </option>
+                    <option value="A-"> A- </option>
+                    <option value="B+"> B+ </option>
+                    <option value="B-"> B- </option>
+                    <option value="O+"> O+ </option>
+                    <option value="O-"> O- </option>
                 </select>
 
                 <label for="alergias"> Alergias: </label>
@@ -162,7 +162,7 @@
                 <br/><br/><br/>
 
                 <div class="inicio"> 
-                    <input type="button" value="Pagina de inicio" href>
+                    <input type="button" value="Pagina de inicio" onclick="history.back()">
                 </div>
                 <br/><br/><br/>
             </form>
@@ -170,7 +170,7 @@
         </div>
         <footer>
             Derechos reservados 2020
-            <time> datetime="12-04-2020" > Publicado 12/04/202</time>
+            <time datetime="12-04-2020" > Publicado 12/04/202</time>
         </footer>
     </div>
 </body>
