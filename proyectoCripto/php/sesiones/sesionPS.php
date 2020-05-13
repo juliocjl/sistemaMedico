@@ -24,17 +24,15 @@
         <header class="cabecera">
             <h1>Usuario: <?php echo $varSesion ?></h1>
         </header>
+    
+
         <div class="opciones">
-            <a target="_blank" href="expediente.php"> Ver Expediente</a>
+            <a target="_blank" href="datosTrabajador.php"> Ver Datos del trabajador</a>
             <br/>
             <br/>
-           <!-- <a href="modificarDatos.php"> Modificar datos </a>
-            <br/>
-            <br/>-->
             <a href="cerrarSesion.php"> Cerrar sesion </a>
-            <br/>
-            <br/>
         </div>
+        <br /> <br />
         <footer>
                 Derechos reservados </br>
                 <time datetime="12-04-2020"> Publicado 12/04/2020 </time>

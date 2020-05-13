@@ -63,28 +63,3 @@
     mysqli_close($conexion); //Se cierra conexion
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title> Verificacion </title>
-    <link rel="shortcut icon" type="image/x-icon" href="icono.ico">
-    <link rel="stylesheet" href="../css/estilos2.css">
-</head>
-
-<body>
-    <div class="contenido">
-        <header class="cabecera">
-        <h1>
-                Datos almacenados correctamente
-        </h1>
-        </header>
-    
-        <form>
-            <input type="button" value="Pagina de inicio">
-        </form>
-
-    </div>
-</body>
-</html>

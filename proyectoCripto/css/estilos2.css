@@ -76,14 +76,40 @@ footer {
 
 .opciones a{
     display: block;
-    font-size: 20px;  
-    padding: 5%;
-    border: 1px solid black;
-    margin: 5%;
-    width: 80%;
+    font-size: 25px;  
+    padding: 2%;
+    margin: 0% 00% 0% 20%;
+    width: 60%;
+    background: white;
+    position: relative;
+    text-decoration: none;
+    color: #0c3a49;
+}
+
+.opciones form{
+    display: block;
+    padding: 2%;
+    margin: 0% 00% 0% 20%;
+    width: 60%;
     background: white;
     position: relative;
 }
-.opciones{
-    width: auto;
+
+.opciones form label{
+    font-size: 20px;  
+    display: block;
+    
+    
+    width: 100%;
+    background: white;
+    text-decoration: none;
+    color: #0c3a49;
+    text-align: center;
+
+}
+
+.opciones a:hover{
+    background: #0c3a49;
+    border: 1px solid white;
+    color: white;
 }
