@@ -1,7 +1,6 @@
 <?php
     include 'conexion.php';
 
-
     $nombre = $_POST["nombre"];    
     $apellido1 =$_POST['apellido1'];
     $apellido2 =$_POST['apellido2'];
